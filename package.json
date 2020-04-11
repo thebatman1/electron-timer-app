@@ -1,0 +1,20 @@
+{
+  "name": "timer-app",
+  "version": "1.0.0",
+  "description": "A simple timer app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "timer"
+  ],
+  "author": "Mrinmay Mukherjee",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.2.1",
+    "moment": "^2.24.0"
+  }
+}
