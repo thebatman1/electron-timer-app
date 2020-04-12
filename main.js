@@ -3,8 +3,8 @@ const { app, BrowserWindow } = require('electron');
 function createWindow() {
     // Set the browser window parameters
     const win = new BrowserWindow({
-        width: 600,
-        height: 400,
+        width: 450,
+        height: 300,
         webPreferences: {
             nodeIntegration: true,
         },
@@ -35,8 +35,15 @@ app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   if (BrowserWindow.getAllWindows().length === 0) {
-    createWindow()
+    createWindow();
   }
+})
+
+// To disable the default menu bar
+app.on('ready', () => {
+    app.on('browser-window-created', (e, window) => {
+        window.setMenu(null);
+    })
 })
 
 // In this file you can include the rest of your app's specific main process

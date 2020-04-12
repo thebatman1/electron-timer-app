@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -10,9 +14,14 @@
 }
 
 .container #timer-clock {
-    font-family: monospace;
-    font-size: 64px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 56px;
     font-weight: bold;
     color: black;
     margin: 8px;
+}
+
+.container #extra-information {
+    font-size: 16px;
+    margin-top: 16px;
 }
