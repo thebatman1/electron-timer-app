@@ -14,6 +14,6 @@
   "author": "Mrinmay Mukherjee",
   "license": "ISC",
   "dependencies": {
-    "electron": "^8.2.1"
+    "electron": "^11.5.0"
   }
 }
